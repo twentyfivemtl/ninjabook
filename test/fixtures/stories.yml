@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: Bitcoin Reddit
+  link: https://www.reddit.com/r/Bitcoin/
+
+two:
+  name: McGill Reddit
+  link: https://www.reddit.com/r/mcgill/
