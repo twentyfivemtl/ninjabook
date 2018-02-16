@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ninjabook project is a webapp following the first steps of reddit. 
 
-Things you may want to cover:
+On this app users will be able to:
 
-* Ruby version
+- create an account
+- post new stories (description/name & link of the "story")
+- vote for stories they have interest in
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The app will have a main page with all the stories and will be able to keep at the top the most voted stories.
