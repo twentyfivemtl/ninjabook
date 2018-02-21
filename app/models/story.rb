@@ -7,6 +7,6 @@ class Story < ApplicationRecord
   end
 
   def to_param
-    "#{id}-#{name.gsub(/\W/, '-').downcase}"
+    "#{id}-#{name.gsub(/\W/,'-').downcase}"
   end
 end
