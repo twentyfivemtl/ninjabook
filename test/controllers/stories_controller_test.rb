@@ -1,4 +1,4 @@
-require 'test_helper'
+# require 'test_helper'
 
 class StoriesControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
@@ -7,10 +7,10 @@ class StoriesControllerTest < ActionDispatch::IntegrationTest
   end
 
   # test "should get new" do
-  #   get :stories_new
+  #   get :new
   #   assert_response :success
-  #   # assert_template 'new'
-  #   # assert_not_nil assigns(:story)
+  #   assert_template 'new'
+  #   assert_not_nil assigns(:story)
   # end
 
   test "new shows new form" do
@@ -42,7 +42,7 @@ class StoriesControllerTest < ActionDispatch::IntegrationTest
   test "show story" do
     get story_path(stories(:one))
     assert_response :success
-    assert_response.body.include?(stories(:one).name)
+    assert response.body.include?(stories(:one).name)
   end
 
   test "show story vote elements" do
