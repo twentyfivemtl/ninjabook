@@ -2,9 +2,7 @@ class StoriesController < ApplicationController
   before_action :ensure_login, only: [ :new, :create ]
 
   def index
-    @current_time = Time.now
-
-    @story = Story.order('RANDOM()').first
+    @stories = Story.popular
   end
 
   def new
@@ -27,6 +25,11 @@ class StoriesController < ApplicationController
 
   def show
     @story = Story.find(params[:id])
+  end
+
+  def bin
+    @stories = Story.upcoming
+      render action: "index"
   end
 
 end

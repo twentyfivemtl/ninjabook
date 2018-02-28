@@ -3,7 +3,9 @@
 one:
   name: Bitcoin Reddit
   link: https://www.reddit.com/r/Bitcoin/
+  user: glenn
 
 two:
   name: McGill Reddit
   link: https://www.reddit.com/r/mcgill/
+  user: john

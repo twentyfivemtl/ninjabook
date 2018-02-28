@@ -22,8 +22,17 @@
   <%= link_to @story.link, @story.link %>
 </p>
 
-<div id="vote_form">
-  <%= form_tag story_votes_path(@story), remote: true do %>
-    <%= submit_tag 'Vote for it' %>
-  <% end %>
-</div>
+<% if logged_in? %>
+  <div id="vote_form">
+    <%= form_tag story_votes_path(@story), remote: true do %>
+      <%= submit_tag 'Vote' %>
+    <% end %>
+  </div>
+<% else %>
+  <p>
+    <em>
+      You would be able to vote for this story if you were
+      <%= link_to 'logged_in', new_session_path %>!
+    </em>
+  </p>
+<% end %>
