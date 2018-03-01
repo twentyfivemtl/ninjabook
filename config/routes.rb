@@ -1,19 +1,11 @@
 Rails.application.routes.draw do
 
-
-
-  get 'users/show'
-
-  get 'votes/create'
-
-  root 'stories#index'
-  # root to: 'stories#new'
-  get 'stories/new'
-
+  resource :session
+  resources :users
+  resources :tags
   resources :stories do
     resources :votes
   end
-
   resources :stories do
     collection do
       get "stories/bin"
@@ -21,7 +13,11 @@ Rails.application.routes.draw do
     resources :votes
   end
 
-  resource :session
-  resources :users
+  root 'stories#index'
+
+  get 'tags/show'
+  get 'users/show'
+  get 'votes/create'
+  get 'stories/new'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
