@@ -1,11 +1,28 @@
 # README
 
-Ninjabook project is a webapp following the first steps of reddit. 
+Ninjabook is a project following a sitepoint book.
 
-On this app users will be able to:
+On this app the user is able to:
 
-- create an account
-- post new stories (description/name & link of the "story")
-- vote for stories they have interest in
+-login-logout (fully coded, not devise).
+-post new stories (with name, link, description and tags).
+-vote for stories they have interest in.
 
-The app will have a main page with all the stories and will be able to keep at the top the most voted stories.
+the user can see 6 different pages:
+
+-front-page stories (stories with more than 5 votes).
+
+-upcoming stories (stories with less than 5 votes).
+
+-submit a story (post a new story).
+
+-when clicking on the story you will see the all the informations inputted in the 'submit a story section'.
+
+-When clicking on the user name, this will show the user submitted stories and voted stories.
+
+-When clicking on the tag the user will be able to see all the stories that have this specific tag.
+
+
+
+
+
